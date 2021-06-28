@@ -1,7 +1,5 @@
-package com.mobiquity.packer;
-
 import com.mobiquity.exception.APIException;
-import com.mobiquity.packer.fileprocessor.FileProcessor;
+import com.mobiquity.packer.Knapsack;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -20,9 +18,7 @@ public class KnapsackTest {
         int maxWeight = 5600;
 
         //Act
-        APIException error = assertThrows(APIException.class, () -> {
-            new Knapsack(maxWeight, indexes, weights, costs);
-        });
+        APIException error = assertThrows(APIException.class, () -> new Knapsack(maxWeight, indexes, weights, costs));
 
         //Assert
         assertEquals("Array lengths should be consistent!", error.getMessage());

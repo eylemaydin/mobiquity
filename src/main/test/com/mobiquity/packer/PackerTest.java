@@ -1,6 +1,5 @@
-package com.mobiquity.packer;
-
 import com.mobiquity.exception.APIException;
+import com.mobiquity.packer.Packer;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
