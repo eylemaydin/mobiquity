@@ -48,7 +48,9 @@ method returns the solution as a String.
 Your method should throw an com.mobiquity.exception.APIException if incorrect parameters are being
 passed. Therefore your signature should look like
 
+```
 public static String pack(String filePath) throws APIException
+```
 
 Additional constraints:
 
