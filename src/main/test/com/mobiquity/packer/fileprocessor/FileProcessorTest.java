@@ -108,7 +108,7 @@ public class FileProcessorTest {
 
         //Assert
         Line line = inputFile.getLines().stream().findFirst().get();
-        assertEquals(line.getPackage().getWeightLimit(), 81.0);
+        assertEquals(line.getPackage().getWeightLimit().doubleValue(), 81.0);
 
         assertEquals(line.getItems().size(), 6);
 
